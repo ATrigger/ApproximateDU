@@ -87,10 +87,10 @@ private:
     void DISPLAY() {
         std::string title_str = "dy1/dx = sin(x*y2),dy2/dx=x+cos(xy1,y2)";
         layer(std::string(std::string("EULER:")+title_str), 1);
-        plot3(target.first, target.second.first, target.second.second);
+        plot( target.second.first, target.second.second);
         set("Color","m");
         layer(std::string(std::string("RGK:")+title_str), 0);
-        plot3(target2.first, target2.second.first, target2.second.second);
+        plot(target2.second.first, target2.second.second);
         set("Color","r");
     }
 } mp;
